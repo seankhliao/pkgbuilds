@@ -1,5 +1,5 @@
 pkgname=gui-env
-pkgver=2
+pkgver=3
 pkgrel=1
 pkgdesc=metapackage for my desktop environment
 arch=('any')
@@ -21,7 +21,11 @@ depends=('sway'
     'brightnessctl'
     'kitty'
     'xorg-server-xwayland'
-    'google-chrome-dev')
+    'google-chrome-dev'
+    'noto-fonts'
+    'noto-fonts-emoji'
+    'noto-fonts-cjk'
+    'ttf-ibm-plex')
 source=('LICENSE')
 sha256sums=('SKIP')
 
