@@ -1,5 +1,5 @@
 pkgname=dev-tools
-pkgver=2
+pkgver=3
 pkgrel=1
 pkgdesc=metapackage for my dev tools
 arch=('any')
@@ -21,6 +21,8 @@ depends=('git'
     'ripgrep'
     'tag-ag'
     'aria2'
+    'ranger'
+    'w3m'
     'docker'
     'openssh'
     'zsh'
