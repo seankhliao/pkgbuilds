@@ -1,5 +1,5 @@
 pkgname=dev-tools
-pkgver=1
+pkgver=2
 pkgrel=1
 pkgdesc=metapackage for my dev tools
 arch=('any')
@@ -14,6 +14,7 @@ depends=('git'
     'neovim'
     'neovim-plug-git'
     'python'
+    'pytho2'
     'python-pynvim'
     'reflector'
     'exa'
@@ -21,7 +22,9 @@ depends=('git'
     'tag-ag'
     'aria2'
     'docker'
-    'openssh')
+    'openssh'
+    'zsh'
+    'zsh-cpmpletions')
 source=('LICENSE')
 sha256sums=('SKIP')
 
