@@ -1,12 +1,11 @@
 pkgname=gui-env
-pkgver=1
+pkgver=2
 pkgrel=1
 pkgdesc=metapackage for my desktop environment
 arch=('any')
 url='https://github.com/seankhliao/pkgbuilds'
 license=('MIT')
-depends=('sway')
-optdepends=('sway'
+depends=('sway'
     'sway-service'
     'xf86-video-intel'
     'mako'
@@ -21,11 +20,11 @@ optdepends=('sway'
     'alsa-utils'
     'brightnessctl'
     'kitty'
-    'xorg-server-wayland'
-    'google-chrome-unstable')
+    'xorg-server-xwayland'
+    'google-chrome-dev')
+source=('LICENSE')
 sha256sums=('SKIP')
 
 package() {
-    cd "$srcdir/pkgbuilds/$pkgname"
     install -Dm644 LICENSE $pkgdir/usr/share/licenses/$pkgname
 }
