@@ -23,11 +23,9 @@ optdepends=('sway'
     'kitty'
     'xorg-server-wayland'
     'google-chrome-unstable')
-makedepends=('git')
-source=("git://github.com/seankhliao/pkgbuilds")
 sha256sums=('SKIP')
 
 package() {
     cd "$srcdir/pkgbuilds/$pkgname"
-    install -Dm644 ../LICENSE $pkgdir/usr/share/licenses/$pkgname
+    install -Dm644 LICENSE $pkgdir/usr/share/licenses/$pkgname
 }
