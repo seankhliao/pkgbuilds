@@ -1,5 +1,5 @@
 pkgname=sway-service
-pkgver=1
+pkgver=2
 pkgrel=1
 pkgdesc=systemd user service files for sway
 arch=('any')
@@ -7,14 +7,15 @@ url='https://github.com/seankhliao/pkgbuilds'
 license=('MIT')
 depends=('sway' 'systemd')
 optdepends=('mako-service: systemd service files for mako')
-makedepends=('git')
 backup=("etc/sway/conf.d/10-systemd")
-source=("git://github.com/seankhliao/pkgbuilds")
-sha256sums=('SKIP')
+source=('LICENSE'
+    '10-systemd'
+    'sway.service'
+    'sway-session.target')
+sha256sums=('SKIP' 'SKIP' 'SKIP' 'SKIP')
 
 package() {
-    cd "$srcdir/pkgbuilds/sway-service"
-    install -Dm644 ../LICENSE $pkgdir/usr/share/licenses/$pkgname
+    install -Dm644 LICENSE $pkgdir/usr/share/licenses/$pkgname
     install -Dm644 sway-session.target $pkgdir/usr/lib/systemd/sway-session.target
     install -Dm644 sway.service $pkgdir/usr/lib/systemd/sway.service
     install -Dm644 10-systemd $pkgdir/etc/sway/conf.d/10-systemd
