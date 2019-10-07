@@ -1,0 +1,33 @@
+pkgname=gui-env
+pkgver=1
+pkgrel=1
+pkgdesc=metapackage for my desktop environment
+arch=('any')
+url='https://github.com/seankhliao/pkgbuilds'
+license=('MIT')
+depends=('sway')
+optdepends=('sway'
+    'sway-service'
+    'xf86-video-intel'
+    'mako'
+    'mako-service'
+    'wl-clipboard'
+    'wl-clipboard-x11'
+    'i3status'
+    'bemenu'
+    'grim'
+    'slurp'
+    'playerctl'
+    'alsa-utils'
+    'brightnessctl'
+    'kitty'
+    'xorg-server-wayland'
+    'google-chrome-unstable')
+makedepends=('git')
+source=("git://github.com/seankhliao/pkgbuilds")
+sha256sums=('SKIP')
+
+package() {
+    cd "$srcdir/pkgbuilds/$pkgname"
+    install -Dm644 ../LICENSE $pkgdir/usr/share/licenses/$pkgname
+}
