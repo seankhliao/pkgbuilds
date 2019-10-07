@@ -14,7 +14,7 @@ depends=('git'
     'neovim'
     'neovim-plug-git'
     'python'
-    'pytho2'
+    'python2'
     'python-pynvim'
     'reflector'
     'exa'
@@ -24,7 +24,7 @@ depends=('git'
     'docker'
     'openssh'
     'zsh'
-    'zsh-cpmpletions')
+    'zsh-completions')
 source=('LICENSE')
 sha256sums=('SKIP')
 
