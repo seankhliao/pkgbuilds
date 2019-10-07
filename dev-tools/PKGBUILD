@@ -20,6 +20,7 @@ depends=('git'
     'ripgrep'
     'tag-ag'
     'aria2'
+    'docker'
     'openssh')
 source=('LICENSE')
 sha256sums=('SKIP')
