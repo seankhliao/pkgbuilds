@@ -1,0 +1,17 @@
+pkgname=mako-service
+pkgver=1
+pkgrel=1
+pkgdesc=systemd user service files for mako
+arch=('any')
+url='https://github.com/seankhliao/pkgbuilds'
+license=('MIT')
+depends=('mako' 'systemd' 'sway-service')
+makedepends=('git')
+source=("git://github.com/seankhliao/pkgbuilds")
+sha256sums=('SKIP')
+
+package() {
+    cd "$srcdir/pkgbuilds/mako-service"
+    install -Dm644 ../LICENSE $pkgdir/usr/share/licenses/$pkgname
+    install -Dm644 mako.service $pkgdir/usr/lib/systemd/mako.service
+}
