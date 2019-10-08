@@ -1,5 +1,5 @@
 pkgname=gui-env
-pkgver=3
+pkgver=4
 pkgrel=1
 pkgdesc=metapackage for my desktop environment
 arch=('any')
@@ -26,9 +26,11 @@ depends=('sway'
     'noto-fonts-emoji'
     'noto-fonts-cjk'
     'ttf-ibm-plex')
-source=('LICENSE')
-sha256sums=('SKIP')
+source=('LICENSE'
+    'amute.service')
+sha256sums=('SKIP' 'SKIP')
 
 package() {
     install -Dm644 LICENSE $pkgdir/usr/share/licenses/$pkgname
+    install -Dm644 amute.service $pkgdir/usr/lib/systemd/user/amute.service
 }
