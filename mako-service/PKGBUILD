@@ -1,7 +1,7 @@
 pkgname=mako-service
-pkgver=2
+pkgver=3
 pkgrel=1
-pkgdesc=systemd user service files for mako
+pkgdesc="systemd user service files for mako"
 arch=('any')
 url='https://github.com/seankhliao/pkgbuilds'
 license=('MIT')
@@ -12,5 +12,5 @@ sha256sums=('SKIP' 'SKIP')
 
 package() {
     install -Dm644 LICENSE $pkgdir/usr/share/licenses/$pkgname
-    install -Dm644 mako.service $pkgdir/usr/lib/systemd/mako.service
+    install -Dm644 mako.service $pkgdir/usr/lib/systemd/user/mako.service
 }
