@@ -5,7 +5,7 @@ pkgdesc=systemd user service files for ssh-agent
 arch=('any')
 url='https://github.com/seankhliao/pkgbuilds'
 license=('MIT')
-depends=('openssh')
+depends=('openssh' 'opensc')
 source=('LICENSE'
     'ssh-agent.service')
 sha256sums=('SKIP' 'SKIP')
