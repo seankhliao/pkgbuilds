@@ -1,5 +1,5 @@
 pkgname=dev-tools
-pkgver=4
+pkgver=5
 pkgrel=1
 pkgdesc=metapackage for my dev tools
 arch=('any')
@@ -26,6 +26,7 @@ depends=('git'
     'sudo'
     'docker'
     'openssh'
+    'ssh-agent-service'
     'zsh'
     'zsh-completions')
 source=('LICENSE')
