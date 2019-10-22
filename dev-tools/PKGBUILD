@@ -1,7 +1,7 @@
 pkgname=dev-tools
-pkgver=5
+pkgver=6
 pkgrel=1
-pkgdesc=metapackage for my dev tools
+pkgdesc="metapackage for my dev tools"
 arch=('any')
 url='https://github.com/seankhliao/pkgbuilds'
 license=('MIT')
@@ -26,7 +26,6 @@ depends=('git'
     'sudo'
     'docker'
     'openssh'
-    'ssh-agent-service'
     'zsh'
     'zsh-completions')
 source=('LICENSE')
