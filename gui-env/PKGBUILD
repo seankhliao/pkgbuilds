@@ -1,5 +1,5 @@
 pkgname=gui-env
-pkgver=5
+pkgver=6
 pkgrel=1
 pkgdesc="metapackage for my desktop environment"
 arch=('any')

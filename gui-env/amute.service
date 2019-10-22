@@ -6,4 +6,5 @@ Type=oneshot
 ExecStart=/usr/bin/amixer set Master off
 
 [Install]
-WantedBy=sway-session.target
+# WantedBy=sway-session.target
+WantedBy=graphical-session.target
