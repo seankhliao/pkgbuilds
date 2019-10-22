@@ -1,5 +1,5 @@
 pkgname=gui-env
-pkgver=6
+pkgver=7
 pkgrel=1
 pkgdesc="metapackage for my desktop environment"
 arch=('any')
@@ -8,6 +8,7 @@ license=('MIT')
 depends=('sway'
     'sway-service'
     'xf86-video-intel'
+    'swaylock'
     'mako'
     'mako-service'
     'wl-clipboard'
