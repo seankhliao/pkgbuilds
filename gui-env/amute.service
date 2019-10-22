@@ -3,7 +3,7 @@ Description=Mute sound on login
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/amixer sset Master off
+ExecStart=/usr/bin/amixer set Master off
 
 [Install]
 WantedBy=sway-session.target

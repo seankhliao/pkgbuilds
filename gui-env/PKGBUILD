@@ -1,7 +1,7 @@
 pkgname=gui-env
-pkgver=4
+pkgver=5
 pkgrel=1
-pkgdesc=metapackage for my desktop environment
+pkgdesc="metapackage for my desktop environment"
 arch=('any')
 url='https://github.com/seankhliao/pkgbuilds'
 license=('MIT')
