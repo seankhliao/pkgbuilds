@@ -1,16 +1,15 @@
 pkgname=xps-system
-pkgver=1
+pkgver=3
 pkgrel=1
-pkgdesc=metapackage for my xps 13
+pkgdesc="metapackage for my xps 13"
 arch=('any')
 url='https://github.com/seankhliao/pkgbuilds'
 license=('MIT')
 depends=('base'
     'linux'
-    'linux-firmware-git'
+    'linux-firmware'
     'intel-ucode'
-    'wpa_supplicant'
-    'yay-bin')
+    'wpa_supplicant')
 source=('LICENSE')
 sha256sums=('SKIP')
 
